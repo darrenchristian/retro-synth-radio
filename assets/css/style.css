@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*landing page*/
+.jumbotron hr{
+	background-color: #fff;
+}
+.jumbotron h1{
+	color: #f2f2f2;
+}
+#jumbo-land{
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+	padding-top: 15%;
+	border-radius: 0;
+}
+.landingpage{
+	background-image: url("https://orig00.deviantart.net/ac41/f/2017/234/0/e/synthwave_car_by_devitant-dbkxbly.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*end landing page*/
+
+/*Home Page*/
+body{
+	background-color: black;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#homeheader{
+	width: 100%;
+	height: 15vh;
+	background-image: url("../images/synthwave-header.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+#mainNav{
+	background-color: rgb(0, 0, 0, 0.3);
+}
+#navbarmenu ul li a{
+	padding-top: 30px;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-weight: bolder;
+}
+#navbarmenu ul img{
+
+}
+.first-section{
+	min-height: 100vh;
+	background-image: url("../images/car.gif");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+/*	opacity: 0.8;
+*/}
+hr{
+  border-top: 1px solid #ccc;
+}
+.carousel-item img{
+	height: 380px;
+}
+.carousel-caption a{
+	text-decoration: none;
+}
+.carousel-caption a:link{
+	color: white;
+}
+.second-section{
+	background-image: url("http://orig12.deviantart.net/3531/f/2015/322/1/0/the_grid___komodo_upload_02_by_winampers_pro-d9h4oaw.png");
+	min-height: 100vh;
+	padding-top: 30px;
+}
+.information{
+	background-color: rgba(0, 0, 0, 0.4);
+	min-height: 90vh;
+	border: solid transparent;
+	border-radius: 20px;
+	color: white;
+}
+.information div[class*="col"]{
+	padding-top: 150px;
+}
+/*End Home Page*/
+
+
+/*Music Page*/
+.stream-section{
+	min-height: 100vh;
+	background-image: url("../images/musicbg3.png");
+/*	background-image: url("../images/musicbg2.png");
+*/	background-attachment: fixed;
+	background-size: cover;
+}
+.stream-content{
+	background-color: rgba(0, 0, 0, 0.5);
+	border: solid black transparent;
+	border-radius: 20px;
+	color: white;
+	max-height: 60vh;
+}
+#chatroom{
+	min-height: 700px;
+}
+.music-second-sect{
+	min-height: 40vh;
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.music-third-sect{
+	min-height: 40vh;
+	background-color: rgba(0, 0, 255, 0.5);
+	color: white;
+}
+.img-ls{
+	float: left;
+}
+.img-rs{
+	float: right;
+}
+
+footer{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 30vh;
+
+}
+footer ul{
+	list-style: none;
+}
+.footcontent{
+	background-color: rgba(255, 255, 255, 0.1);
+	line-height: 10vh;
+}
+footer .icons{
+	margin-right: 20px;
+}
+
+
+
+/*Contact Us Page*/
+.contact-form{
+	padding-top: 50px;
+	background-color: rgba(255, 255, 255, 0.5);
+	min-height: 80vh;
+	color: black;
+	font-weight: bolder;
+}
+
+/*NAV ANIMATION*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all .5s;
+}
+nav ul li a:hover {
+	color: #555;
+}
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #aaa;
+	height: 1px;
+}
+nav.stroke ul li a:hover:after {
+	width: 100%;
+}
+
+nav.fill ul li a {
+	transition: all 2s;
+}
+
+nav.fill ul li a:after {
+	text-align: left;
+	content: '.';
+	margin: 0;
+	opacity: 0;
+}
+nav.fill ul li a:hover {
+	color: #fff;
+	z-index: 1;
+}
+nav.fill ul li a:hover:after {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+	-moz-animation: fill 1s forwards;
+	opacity: 1;
+}
+@-webkit-keyframes fill {
+	0% {
+	    width: 0%;
+	    height: 1px;
+ 	 }
+  	50% {
+	    width: 100%;
+	    height: 1px;
+	  }
+	100% {
+	    width: 100%;
+	    height: 100%;
+	    background: #333;
+	}
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+	0% {
+		width: 1px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		height: 1px;
+		z-index: -1;
+		background: #eee;
+		border-radius: 100%;
+	}
+	100% {
+		background: #aaa;
+		height: 5000%;
+		width: 5000%;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		border-radius: 0;
+	}
+}
+/*NAV ANIMATION*/
+
+/*Tablet Rules*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	.navbar ul img{
+		visibility: hidden;
+	}
+}
+/*Mobile Phone*/
+@media only screen and (max-width: 400px){
+
+	.navbar ul img{
+		visibility: hidden
+	}
+	.navbar ul .half-nav{
+		margin-top: -100px;
+	}
+	audio{
+		visibility: hidden;
+	}
+	.description{
+		margin-top: -100px;
+	}
+	.carousel-item img{
+		height: 250px;
+	}
+	.container{
+		width: 1000px;
+	}
+
+	/*music*/
+	#chatroom{
+		min-height: 300px;
+		margin-top: 20px;
+	}
+	.stream-content{
+		min-height: 300px;
+	}
+}
