@@ -10,34 +10,41 @@
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/hover.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
-	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top stroke">
+	<header id="homeheader" class="container-fluid">
+	</header>
+	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top">
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div id="navbarmenu" class="collapse navbar-collapse">
 			<ul class="navbar-nav mx-auto">
 				<li class="navitem">
-					<a href="home.html" class="nav-link">Home</a>
+					<a href="home.html" class="nav-link hvr-grow-shadow">Home</a>
+				</li>
+				
+				<li class="nav-item dropdown open">
+					<a class="nav-link dropdown-toggle hvr-grow-shadow" href="#" id="navbardrop" data-toggle="dropdown">
+						Synth-Universe
+					</a>
+					<ul class="dropdown-menu">
+					    <li><a class="dropdown-item" href="music.html">Music</a></li>
+						<li><a class="dropdown-item" href="movies.html">Movies</a></li>
+					    <li><a class="dropdown-item" href="games.html">Games</a></li>
+				    </ul>
+				</li>
+				
+				<a href="index.html"><img src="assets/images/logo.png" class="animated zoomIn hvr-grow-shadow"></a>
+				
+				<li class="navitem half-nav">
+					<a href="contact.html" class="nav-link hvr-grow-shadow active">Contact Us</a>
 				</li>
 				<li class="navitem">
-					<a href="#about" class="nav-link">Music</a>
-				</li>
-				<li class="navitem">
-					<a href="index.html#portfolio" class="nav-link">Movies</a>
-				</li>
-				<a href="index.html"><img src="assets/images/logo.png" class="animated zoomIn"></a>
-				<li class="navitem">
-					<a href="index.html#contact" class="nav-link">Games</a>
-				</li>
-				<li class="navitem">
-					<a href="contact.html" class="nav-link active">Contact Us</a>
-				</li>
-				<li class="navitem">
-					<a href="index.html#contact" class="nav-link">Merch</a>
+					<a href="merch.html" class="nav-link hvr-grow-shadow">Merch</a>
 				</li>
 
 			</ul>
@@ -74,6 +81,50 @@
 			</div>
 		</div>		
 	</div>
+	<footer class="container-fluid">
+		<div class="row text-center">
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
+				<h5>Disclaimer</h5>
+				<p>No copyright infringement intended, we do not own the images nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes.</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
+				<h5>Sources</h5>
+				<ul>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+				</ul>				
+			</div>
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
+				<h5>About Retro-Synth</h5>
+				<ul>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+					<li class="mb-2"><a href="#">Lorem</a></li>
+				</ul>			
+			</div>
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
+				<h5>News Letter</h5>
+				<div class="row">
+					<div class="col-md-12 mb-3">
+						 <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon1" width="50%">
+					</div>
+					<div class="col-md-12 mb-3">
+						 <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1" width="50%">
+					</div>
+					<div class="col-md-12 mb-3">
+						<button class="btn btn-block btn-outline-primary">Submit</button>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footcontent text-center">	
+			<span><strong>Darren Christian Santos &copy; Copyrights 2018</strong></span>
+			
+		</div>
+	</footer>
 
 
 	<!-- jquery first then popper then bootstrap.js -->

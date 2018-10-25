@@ -39,17 +39,37 @@ body{
 	background-repeat: no-repeat;
 }
 #mainNav{
-	background-color: rgb(0, 0, 0, 0.3);
+	background-color: rgb(0, 0, 0, 0.6);
+	color: white;
+	transition:500ms ease;
 }
 #navbarmenu ul li a{
 	padding-top: 30px;
 	margin-right: 25px;
 	margin-left: 25px;
-	font-weight: bolder;
-}
+	font-weight: bold;
+/*	color: white;
+*/}
 #navbarmenu ul img{
 
 }
+.navbar-dark.scrolled{
+  background-color: red;
+}
+
+.dropdown-menu{
+	margin-top: -70px;
+	background-color: rgba(63, 0, 255, 0.3);
+	color: white;
+	margin-left: 10px;
+}
+.dropdown-item{
+	color: white;
+}
+.dropdown-item:hover{
+	background-color: rgba(255, 192, 203, 0.0);
+}
+
 .first-section{
 	min-height: 100vh;
 	background-image: url("../images/car.gif");
@@ -92,7 +112,7 @@ hr{
 /*Music Page*/
 .stream-section{
 	min-height: 100vh;
-	background-image: url("../images/musicbg3.png");
+	background-image: url("../images/car.gif");
 /*	background-image: url("../images/musicbg2.png");
 */	background-attachment: fixed;
 	background-size: cover;
@@ -151,9 +171,53 @@ footer .icons{
 	color: black;
 	font-weight: bolder;
 }
+.btn-outline-primary{
+	border: solid;
+	border-color: rgba(63, 0, 255);
+}
+.btn-primary{
+	background-color: rgba(63, 0, 255, 0.5);
+}
+/*End Contact Us*/
+
+
+/*Merch Page*/
+.merch-items{
+	background-color: rgba(63, 0, 255, 0.7);
+	color: white;
+}
+.list-group-item{
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	border-style: solid transparent;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.list-group-item:hover{
+	background-color: rgba(128, 0, 128, 0.5);
+	color: white;
+}
+.gallery-items{
+	min-height: 220px;
+	min-width: 250px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-style: solid transparent;
+	border-radius: 10px;
+}
+.gallery-items img{
+	height: 300px;
+	min-width: 250px;
+}
+#leftside{
+	width: 20%;
+}
+
+
+
 
 /*NAV ANIMATION*/
-nav ul li a,
+/*nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
 	transition: all .5s;
@@ -217,10 +281,10 @@ nav.fill ul li a:hover:after {
 	    height: 100%;
 	    background: #333;
 	}
-}
+}*/
 
 /* Keyframes */
-@-webkit-keyframes circle {
+/*@-webkit-keyframes circle {
 	0% {
 		width: 1px;
 		top: 0;
@@ -245,13 +309,29 @@ nav.fill ul li a:hover:after {
 		margin: auto;
 		border-radius: 0;
 	}
+}*/
+/*NAV ANIMATION END*/
+html{
+	scroll-behavior: smooth;
 }
-/*NAV ANIMATION*/
-
 /*Tablet Rules*/
 @media only screen and (min-width: 401px) and (max-width: 960px){
 	.navbar ul img{
 		visibility: hidden;
+	}
+	.navbar ul .half-nav{
+		margin-top: -120px;
+	}
+	/*Merch Content*/
+	.stream-section{
+		padding: 0;
+
+	}
+	.stream-content{
+		padding-bottom: 50px;
+	}
+	.dropdown-menu{
+		margin-top: 10px;
 	}
 }
 /*Mobile Phone*/
@@ -261,7 +341,7 @@ nav.fill ul li a:hover:after {
 		visibility: hidden
 	}
 	.navbar ul .half-nav{
-		margin-top: -100px;
+		margin-top: -120px;
 	}
 	audio{
 		visibility: hidden;
@@ -272,16 +352,33 @@ nav.fill ul li a:hover:after {
 	.carousel-item img{
 		height: 250px;
 	}
-	.container{
-		width: 1000px;
-	}
 
+	/*home*/
+	.description{
+		text-align: center;
+	}
+	.second-section{
+		width: 100%;
+		padding: 0;
+	}
+	.information > .row > .col-md-7{
+	padding-top: 50px;
+	}
+	
 	/*music*/
 	#chatroom{
 		min-height: 300px;
 		margin-top: 20px;
+		padding: 0;
+	}
+	.stream-section{
+		padding: 0;
 	}
 	.stream-content{
 		min-height: 300px;
+		padding: 0;
+	}
+	.list-group{
+		visibility: hidden;
 	}
 }

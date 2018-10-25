@@ -12,6 +12,7 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/hover.css">
 
 </head>
 
@@ -25,23 +26,27 @@
 		<div id="navbarmenu" class="collapse navbar-collapse">
 			<ul class="navbar-nav mx-auto">
 				<li class="navitem">
-					<a href="home.html" class="nav-link">Home</a>
+					<a href="home.html" class="nav-link hvr-grow-shadow">Home</a>
+				</li>
+				
+				<li class="nav-item dropdown open">
+					<a class="nav-link dropdown-toggle hvr-grow-shadow active" href="#" id="navbardrop" data-toggle="dropdown">
+						Synth-Universe
+					</a>
+					<ul class="dropdown-menu">
+					    <li><a class="dropdown-item" href="music.html">Music</a></li>
+						<li><a class="dropdown-item" href="movies.html">Movies</a></li>
+					    <li><a class="dropdown-item" href="games.html">Games</a></li>
+				    </ul>
+				</li>
+				
+				<a href="index.html"><img src="assets/images/logo.png" class="animated zoomIn hvr-grow-shadow hvr-grow-shadow"></a>
+				
+				<li class="navitem half-nav">
+					<a href="contact.html" class="nav-link hvr-grow-shadow">Contact Us</a>
 				</li>
 				<li class="navitem">
-					<a href="music.html" class="nav-link active">Music</a>
-				</li>
-				<li class="navitem">
-					<a href="index.html#portfolio" class="nav-link">Movies</a>
-				</li>
-				<a href="index.html"><img src="assets/images/logo.png" class="animated zoomIn"></a>
-				<li class="navitem">
-					<a href="index.html#contact" class="nav-link">Games</a>
-				</li>
-				<li class="navitem">
-					<a href="contact.html" class="nav-link">Contact Us</a>
-				</li>
-				<li class="navitem">
-					<a href="index.html#contact" class="nav-link">Merch</a>
+					<a href="merch.html" class="nav-link hvr-grow-shadow">Merch</a>
 				</li>
 
 			</ul>
@@ -49,7 +54,7 @@
 	</nav>
 	<section class="container-fluid d-flex stream-section">
 		<div class="row align-self-center mx-auto w-100">
-			<div class="col-12 col-md-6 stream-content text-center">
+			<div class="col-12 col-lg-6 col-md-12 stream-content text-center">
 				
 				<h1 class="mt-5">24/7 Stream</h1>
 				<div class="embed-responsive embed-responsive-16by9">
@@ -57,22 +62,20 @@
 				</div>
 				
 			</div>
-			<div class="col-12 col-md-6 text-center">
+			<div class="col-12 col-lg-6 col-md-12 text-center">
 				
 				<div id="chatroom" class="embed-responsive embed-responsive-16by9">
 					<iframe id="chat" src='https://minnit.chat/SynthRadio?embed&' width="700" height="900"></iframe>
 				</div>
 				
 			</div>
-			 <div class="col-12 col-md-7 stream-content">
-
-			</div>
+		 
 		</div>
 	</section>
 	<section class="container-fluid music-second-sect">
 		<div class="row">
 			
-			<div class="col-md-6 mt-4">
+			<div class="col-md-6 mt-4 wow slideInLeft">
 				<h4>Dark Synth Music</h4>
 				<img class="img-ls" src="assets/images/logo.png">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -82,7 +85,7 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<div class="col-md-6 mt-5">
+			<div class="col-md-6 mt-5 wow slideInRight">
 				<img class="img-rs" src="assets/images/logo.png">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -126,14 +129,11 @@
 	</section> -->
 	<footer class="container-fluid">
 		<div class="row text-center">
-			<div class="col-md-3 mt-4">
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
 				<h5>Disclaimer</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. </p>
+				<p>No copyright infringement intended, we do not own the images nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes.</p>
 			</div>
-			<div class="col-md-3 mt-4">
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
 				<h5>Sources</h5>
 				<ul>
 					<li class="mb-2"><a href="#">Lorem</a></li>
@@ -142,7 +142,7 @@
 					<li class="mb-2"><a href="#">Lorem</a></li>
 				</ul>				
 			</div>
-			<div class="col-md-3 mt-4">
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
 				<h5>About Retro-Synth</h5>
 				<ul>
 					<li class="mb-2"><a href="#">Lorem</a></li>
@@ -151,7 +151,7 @@
 					<li class="mb-2"><a href="#">Lorem</a></li>
 				</ul>			
 			</div>
-			<div class="col-md-3 mt-4">
+			<div class="col-lg-3 col-md-6 col-12 mt-4">
 				<h5>News Letter</h5>
 				<div class="row">
 					<div class="col-md-12 mb-3">
