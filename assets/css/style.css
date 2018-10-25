@@ -2,6 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+
 }
 /*landing page*/
 .jumbotron hr{
@@ -212,7 +214,9 @@ footer .icons{
 #leftside{
 	width: 20%;
 }
-
+.merch-items .col-md-9{
+	text-align: center;
+}
 
 
 
@@ -320,7 +324,7 @@ html{
 		visibility: hidden;
 	}
 	.navbar ul .half-nav{
-		margin-top: -120px;
+		margin-top: -125px;
 	}
 	/*Merch Content*/
 	.stream-section{
@@ -341,7 +345,7 @@ html{
 		visibility: hidden
 	}
 	.navbar ul .half-nav{
-		margin-top: -120px;
+		margin-top: -125px;
 	}
 	audio{
 		visibility: hidden;
