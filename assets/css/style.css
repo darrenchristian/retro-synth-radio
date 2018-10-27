@@ -32,6 +32,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	position: relative;
 }
 #homeheader{
 	width: 100%;
@@ -50,6 +51,8 @@ body{
 	margin-right: 25px;
 	margin-left: 25px;
 	font-weight: bold;
+	padding-bottom: -1000px;
+
 /*	color: white;
 */}
 #navbarmenu ul img{
@@ -63,13 +66,18 @@ body{
 	margin-top: -70px;
 	background-color: rgba(63, 0, 255, 0.3);
 	color: white;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 .dropdown-item{
 	color: white;
 }
 .dropdown-item:hover{
 	background-color: rgba(255, 192, 203, 0.0);
+	color: pink;
+}
+.dropdown-item:active{
+	font-weight: bolder;
+	color: pink;
 }
 
 .first-section{
@@ -80,7 +88,8 @@ body{
 	background-size: cover;
 	color: white;
 /*	opacity: 0.8;
-*/}
+*/
+}
 hr{
   border-top: 1px solid #ccc;
 }
@@ -93,21 +102,102 @@ hr{
 .carousel-caption a:link{
 	color: white;
 }
+.description-text{
+	overflow:auto; 
+	width: 450px; 
+	height: 390px;
+}
+.description-text::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+.description-text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.description-text::-webkit-scrollbar-thumb {
+    background-color: rgba(24, 3, 105, 1);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.description-text::-webkit-scrollbar-thumb:hover {
+    background-image: url(http://www.textures4photoshop.com/tex/thumbs/seamless-plasma-electricity-texture-free-thumb40.jpg);
+}
 .second-section{
 	background-image: url("http://orig12.deviantart.net/3531/f/2015/322/1/0/the_grid___komodo_upload_02_by_winampers_pro-d9h4oaw.png");
 	min-height: 100vh;
 	padding-top: 30px;
 }
-.information{
+.third-section{
+	background-image: url("http://orig12.deviantart.net/3531/f/2015/322/1/0/the_grid___komodo_upload_02_by_winampers_pro-d9h4oaw.png");
+	min-height: 100vh;
+	padding-top: 30px;
+}
+.sec-sect-info{
+	background-color: rgba(0, 0, 0, 0.4);
+	min-height: 80vh;
+	border: solid transparent;
+	border-radius: 20px;
+	color: white;
+}
+.sec-sect-info div[class*="col"]{
+	padding-top: 150px;
+}
+.sec-sect-info{
 	background-color: rgba(0, 0, 0, 0.4);
 	min-height: 90vh;
 	border: solid transparent;
 	border-radius: 20px;
 	color: white;
 }
-.information div[class*="col"]{
-	padding-top: 150px;
+.sec-sect-info div[class*="col"]{
+	padding-top: 50px;
 }
+.third-sect-info{
+	background-color: rgba(0, 0, 0, 0.4);
+	min-height: 90vh;
+	border: solid transparent;
+	border-radius: 20px;
+	color: white;
+}
+.third-sect-info div[class*="col"]{
+	padding-top: 50px;
+}
+.latest-items{
+	min-height: 220px;
+	min-width: 250px;
+	background-color: rgba(63, 0, 255, 0.3);
+	color: white;
+	border-style: solid transparent;
+	border-radius: 10px;
+}
+.latest-items img{
+	height: 330px;
+	min-width: 250px;
+}
+.ovl{
+	opacity: 0;
+	transition: 1s;
+	color: white;
+}
+.ovl-img{
+	opacity: 0;
+	transition: 1s;
+	padding: 0;
+}
+.ovl:hover{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.ovl-img:hover{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 /*End Home Page*/
 
 
@@ -124,7 +214,7 @@ hr{
 	border: solid black transparent;
 	border-radius: 20px;
 	color: white;
-	max-height: 60vh;
+	max-height: 80vh;
 }
 #chatroom{
 	min-height: 700px;
@@ -156,8 +246,12 @@ footer ul{
 	list-style: none;
 }
 .footcontent{
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.2);
 	line-height: 10vh;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: white;
 }
 footer .icons{
 	margin-right: 20px;
@@ -189,11 +283,12 @@ footer .icons{
 	color: white;
 }
 .list-group-item{
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 1);
 	color: white;
 	border-style: solid transparent;
 	border-radius: 10px;
 	margin-bottom: 10px;
+	z-index: -555;
 }
 .list-group-item:hover{
 	background-color: rgba(128, 0, 128, 0.5);
@@ -326,6 +421,26 @@ html{
 	.navbar ul .half-nav{
 		margin-top: -125px;
 	}
+	/*Home*/
+	.first-section{
+		background-image: url("../images/car.gif");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 960px 1024px;
+	}
+	.description{
+		text-align: center;
+	}
+	.description-text{
+		overflow:auto; 
+		width: 650px; 
+		height: 390px;
+		margin: 0 auto;
+	}
+	.col-centered{
+		margin: 0 auto;
+	}
+
 	/*Merch Content*/
 	.stream-section{
 		padding: 0;
@@ -336,6 +451,11 @@ html{
 	}
 	.dropdown-menu{
 		margin-top: 10px;
+	}
+	.second-section{
+		width: 100%;
+		padding: 0;
+
 	}
 }
 /*Mobile Phone*/
@@ -350,23 +470,38 @@ html{
 	audio{
 		visibility: hidden;
 	}
-	.description{
-		margin-top: -100px;
-	}
+	
 	.carousel-item img{
 		height: 250px;
+	}
+	.dropdown-menu {
+		margin-top: 10px;
 	}
 
 	/*home*/
 	.description{
 		text-align: center;
+		margin-top: -25px;
+	}
+	.first-section{
+		background-image: url("../images/car.gif");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 400px 640px;
 	}
 	.second-section{
 		width: 100%;
 		padding: 0;
 	}
 	.information > .row > .col-md-7{
-	padding-top: 50px;
+		padding-top: 50px;
+	}
+	.description-text{
+		overflow:auto; 
+		width: 300px; 
+		height: 390px;
+		
+		margin: 0 auto;
 	}
 	
 	/*music*/
