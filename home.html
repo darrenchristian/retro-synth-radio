@@ -10,54 +10,47 @@
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/hover.css">
 </head>
 
 <body>
 	<header id="homeheader" class="container-fluid">
 	</header>
-	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top">
+	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark">
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div id="navbarmenu" class="collapse navbar-collapse">
 			<ul class="navbar-nav mx-auto">
 				<li class="navitem">
-					<a href="home.html" class="nav-link hvr-grow-shadow active">Home</a>
+					<a href="home.html" class="nav-link hvr-underline-from-center active">Home</a>
 				</li>
 				
-				<li class="nav-item dropdown open">
-					<a class="nav-link dropdown-toggle hvr-grow-shadow" href="#" id="navbardrop" data-toggle="dropdown">
-						Synth-Universe
-					</a>
-					<ul class="dropdown-menu">
-					    <li><a class="dropdown-item" href="music.html">Music</a></li>
-						<li><a class="dropdown-item" href="movies.html">Movies</a></li>
-					    <li><a class="dropdown-item" href="games.html">Games</a></li>
-				    </ul>
+				<li class="navitem">
+					<a href="synth.html" class="nav-link hvr-underline-from-center">Synth-Universe</a>
 				</li>
 				
 				<a href="home.html"><img src="assets/images/logo.png" id="logo" class="animated zoomIn hvr-grow-shadow"></a>
 				
 				<li class="navitem half-nav">
-					<a href="contact.html" class="nav-link hvr-grow-shadow">Contact Us</a>
+					<a href="contact.html" class="nav-link hvr-underline-from-center">Contact Us</a>
 				</li>
 				<li class="navitem">
-					<a href="merch.html" class="nav-link hvr-grow-shadow">Merch</a>
+					<a href="merch.html" class="nav-link hvr-underline-from-center">Merch</a>
 				</li>
 
 			</ul>
 		</div>
 	</nav>
-	<section class="container-fluid d-flex stream-section">
-		<div class="row align-self-center mx-auto w-100">
-			<div class="col-12 col-lg-6 col-md-12 stream-content text-center">
+	<section class="container-fluid stream-section">
+		<div class="row  mx-auto">
+			<div class="col-12 col-lg-6 col-md-12 stream-content">
 				
-				<h1 class="mt-3">24/7 Stream</h1>
+				<h1 class="mt-3 pt-3">24/7 Stream</h1>
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/iHSLYK8jy9g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
@@ -73,8 +66,8 @@
 		 
 		</div>
 	</section>
-	<section class="container-fluid second-section">
-		<div class="container wow slideInLeft sec-sect-info">
+	<section class="container-fluid second-section pb-5">
+		<div class="container wow slideInLeft sec-sect-info pb-5">
 			<div class="row">
 				<div class="col-12 col-md-12 col-lg-7">
 					<div id="carousel-controls" class="carousel slide carousel-fade" date-ride="carousel">
@@ -129,15 +122,13 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<section class="third-section wow fadeIn pb-5">
-		<div class="container third-sect-info wow slideInRight pb-5">
+		<div class="container mt-4 third-sect-info pb-5 wow slideInRight">
 			<h2 class="mt-5">Latest Album Releases</h2>
 			<hr>
 			<div class="row">
 				<div class="col-12 col-lg-4 col-md-6">
-					<div class="card latest-items" data-toggle="modal" data-target="#modal-1">
-						<a href="#"><img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2018/10/gunship-dark-all-day.jpg"></a>
+					<div class="card latest-items wow flipInY" data-toggle="modal" data-target="#modal-1">
+						<a href="#"><img class="card-img-top img-fluid" src="assets/images/home/1.jpg"></a>
 						<div class="card-img-overlay ovl">
 							<p></object><strong class="card-text">Style: </strong>
 							<span class="card-text">Dreamwave, Synthpop, Dark Synth</span></p>
@@ -150,8 +141,8 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
-					<div class="card latest-items" data-toggle="modal" data-target="#modal-1">
-						<img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2017/10/cover-demi-gods-1000.jpg">
+					<div class="card latest-items wow flipInY" data-toggle="modal" data-target="#modal-1">
+						<img class="card-img-top img-fluid" src="assets/images/home/2.jpg">
 						<div class="card-img-overlay ovl">
 							<p></object><strong class="card-text">Style: </strong>
 							<span class="card-text">Dreamwave, Chillwave</span></p>
@@ -164,8 +155,8 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-4 col-centered col-md-6">
-					<div class="card latest-items" data-toggle="modal" data-target="#modal-1">
-						<img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2018/10/cover-mitch-murder-selection5.jpg">
+					<div class="card latest-items wow flipInY" data-toggle="modal" data-target="#modal-1">
+						<img class="card-img-top img-fluid" src="assets/images/home/3.jpg">
 						<div class="card-img-overlay ovl">
 							<p></object><strong class="card-text">Style: </strong>
 							<span class="card-text">Dreamwave, Chillwave</span></p>
@@ -184,10 +175,10 @@
 			<hr>
 			<div class="row">
 				<div class="col-12 col-lg-4 col-md-6">
-					<div class="card latest-items" data-toggle="modal" data-target="#modal-1">
-						<a href="#"><img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2018/02/the-midnight_presentation-musician.jpg"></a>
+					<div class="card latest-items wow flipInY" data-toggle="modal" data-target="#modal-1">
+						<a href="#"><img class="card-img-top img-fluid" src="assets/images/home/4.jpg"></a>
 						<div class="card-img-overlay ovl-img">
-							<img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2018/03/The-Midnight-9.jpg">
+							<img class="card-img-top img-fluid" src="assets/images/home/4-1.jpg">
 							
 						</div>
 						<h4 class="card-title text-center mt-2">The Midnight</h4>
@@ -195,20 +186,20 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-4 col-md-6">
-					<div class="card latest-items" data-toggle="modal" data-target="#modal-1">
-						<img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2017/06/av_presentation-musician-436x528.jpg">
+					<div class="card latest-items wow flipInY" data-toggle="modal" data-target="#modal-1">
+						<img class="card-img-top img-fluid" src="assets/images/home/5.jpg">
 						<div class="card-img-overlay ovl-img">
-							<img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2017/06/absolute-valentine-7.jpg">
+							<img class="card-img-top img-fluid" src="assets/images/home/5-1.jpg">
 						</div>
 						<h4 class="card-title text-center mt-2">Absolute Valentine</h4>
 
 					</div>
 				</div>
 				<div class="col-12 col-lg-4 col-md-6 col-centered">
-					<div class="card latest-items" data-toggle="modal" data-target="#modal-1">
-						<img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2018/02/magic-sword_presentation-musician.jpg">
+					<div class="card latest-items wow flipInY" data-toggle="modal" data-target="#modal-1">
+						<img class="card-img-top img-fluid" src="assets/images/home/6.jpg">
 						<div class="card-img-overlay ovl-img">
-							<img class="card-img-top img-fluid" src="http://www.retro-synthwave.com/wp-content/uploads/2018/02/Magic-Sword-14.jpg">
+							<img class="card-img-top img-fluid" src="assets/images/home/6-1.jpg">
 						</div>
 						<h4 class="card-title text-center mt-2">Magic Sword</h4>
 
@@ -217,13 +208,14 @@
 			</div>
 		</div>
 	</section>
+	
 	<footer class="container-fluid">
 		<div class="row text-center">
-			<div class="col-lg-3 col-md-6 col-12 mt-4">
+			<div class="col-lg-4 col-md-6 col-12 mt-4">
 				<h5>Disclaimer</h5>
-				<p>No copyright infringement intended, we do not own the images nor we take credit for it, we are not selling the website or making profits from it and it is used only for educational purposes.</p>
+				<p>No copyright infringement intended. All the images, videos, and music are not of our own and we're not making any profits in this website. This website is for educational purposes only.</p>
 			</div>
-			<div class="col-lg-3 col-md-6 col-12 mt-4">
+			<div class="col-lg-4 col-md-6 col-12 mt-4">
 				<h5>Sources</h5>
 				<ul>
 					<li class="mb-2"><a href="#">Lorem</a></li>
@@ -232,16 +224,7 @@
 					<li class="mb-2"><a href="#">Lorem</a></li>
 				</ul>				
 			</div>
-			<div class="col-lg-3 col-md-6 col-12 mt-4">
-				<h5>About Retro-Synth</h5>
-				<ul>
-					<li class="mb-2"><a href="#">Lorem</a></li>
-					<li class="mb-2"><a href="#">Lorem</a></li>
-					<li class="mb-2"><a href="#">Lorem</a></li>
-					<li class="mb-2"><a href="#">Lorem</a></li>
-				</ul>			
-			</div>
-			<div class="col-lg-3 col-md-6 col-12 mt-4">
+			<div class="col-lg-4 col-md-6 col-12 mt-4">
 				<h5>News Letter</h5>
 				<div class="row">
 					<div class="col-md-12 mb-3">

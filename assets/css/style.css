@@ -12,6 +12,27 @@
 .jumbotron h1{
 	color: #f2f2f2;
 }
+.jumbotron p{
+	color: #f2f2f2;
+
+}
+.jumbotron hr{
+	width: 50%;
+	margin: 0 auto;
+	text-shadow: 200px 200px blue;
+}
+.jumbotron a button{
+	width: 30%;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+.jumbotron a:link{
+	text-decoration: none;
+}
+.jumbotron a button:hover{
+	background-color: purple;
+}
+
 #jumbo-land{
 	background-color: rgba(0, 0, 0, 0.4);
 	height: 100vh;
@@ -25,7 +46,12 @@
 }
 /*end landing page*/
 
-/*Home Page*/
+/*fonts*/
+h1, h2, h3, h4, h5{
+	font-family: 'Yatra One', cursive;
+}
+
+/*Navigation Bar*/
 body{
 	background-color: black;
 	background-image: url("../images/bg.jpg");
@@ -38,8 +64,11 @@ body{
 	width: 100%;
 	height: 15vh;
 	background-image: url("../images/synthwave-header.jpg");
+	/*background-image: url("http://hotlinemiami.com/IMG/hotlinemiami_siteheader.gif");*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-size: cover;
+	scroll-behavior: smooth;
 }
 #mainNav{
 	background-color: rgb(0, 0, 0, 0.6);
@@ -51,18 +80,17 @@ body{
 	margin-right: 25px;
 	margin-left: 25px;
 	font-weight: bold;
-	padding-bottom: -1000px;
+	font-size: 20px;
+	font-family: 'Yatra One', cursive;
 
 /*	color: white;
-*/}
-#navbarmenu ul img{
-
+*/
 }
 .navbar-dark.scrolled{
   background-color: red;
 }
 
-.dropdown-menu{
+/*.dropdown-menu{
 	margin-top: -70px;
 	background-color: rgba(63, 0, 255, 0.3);
 	color: white;
@@ -78,20 +106,61 @@ body{
 .dropdown-item:active{
 	font-weight: bolder;
 	color: pink;
+}*/
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background-color: #D5009C;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
 }
 
-.first-section{
-	min-height: 100vh;
-	background-image: url("../images/car.gif");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+/*Nav Bar*/
+
+/*Home Page*/
+.stream-section{
+	background-image: url("../images/synth/1.gif");
+	/*background-image: url("../images/musicbg2.png");*/
+	/*background-attachment: fixed;*/
 	background-size: cover;
+}
+.stream-content{
+	background-color: rgba(0, 0, 0, 0.5);
+	border: solid black transparent;
+	border-radius: 20px;
 	color: white;
-/*	opacity: 0.8;
-*/
+}
+.stream-content{
+	font-family: 'Yatra One', cursive;
+}
+#chatroom{
+	min-height: 700px;
 }
 hr{
-  border-top: 1px solid #ccc;
+	color: white;
+	border: solid 1px;
 }
 .carousel-item img{
 	height: 380px;
@@ -129,17 +198,13 @@ hr{
 }
 .second-section{
 	background-image: url("http://orig12.deviantart.net/3531/f/2015/322/1/0/the_grid___komodo_upload_02_by_winampers_pro-d9h4oaw.png");
-	min-height: 100vh;
-	padding-top: 30px;
-}
-.third-section{
-	background-image: url("http://orig12.deviantart.net/3531/f/2015/322/1/0/the_grid___komodo_upload_02_by_winampers_pro-d9h4oaw.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 	min-height: 100vh;
 	padding-top: 30px;
 }
 .sec-sect-info{
 	background-color: rgba(0, 0, 0, 0.4);
-	min-height: 80vh;
 	border: solid transparent;
 	border-radius: 20px;
 	color: white;
@@ -149,7 +214,6 @@ hr{
 }
 .sec-sect-info{
 	background-color: rgba(0, 0, 0, 0.4);
-	min-height: 90vh;
 	border: solid transparent;
 	border-radius: 20px;
 	color: white;
@@ -159,7 +223,6 @@ hr{
 }
 .third-sect-info{
 	background-color: rgba(0, 0, 0, 0.4);
-	min-height: 90vh;
 	border: solid transparent;
 	border-radius: 20px;
 	color: white;
@@ -173,9 +236,13 @@ hr{
 	background-color: rgba(63, 0, 255, 0.3);
 	color: white;
 	border-style: solid transparent;
-	border-radius: 10px;
+	border-radius: 50px;
+	-webkit-animation-delay: 0.7s;
+ 	animation-delay: 0.7s;
 }
 .latest-items img{
+	border-style: solid transparent;
+	border-radius: 30px;
 	height: 330px;
 	min-width: 250px;
 }
@@ -183,11 +250,16 @@ hr{
 	opacity: 0;
 	transition: 1s;
 	color: white;
+	border-style: solid transparent;
+	border-radius: 30px;
+
 }
 .ovl-img{
 	opacity: 0;
 	transition: 1s;
 	padding: 0;
+	border-style: solid transparent;
+	border-radius: 30px;
 }
 .ovl:hover{
 	opacity: 1;
@@ -201,34 +273,85 @@ hr{
 /*End Home Page*/
 
 
-/*Music Page*/
-.stream-section{
-	min-height: 100vh;
-	background-image: url("../images/car.gif");
-/*	background-image: url("../images/musicbg2.png");
-*/	background-attachment: fixed;
+/*Synth Page*/
+.synth-slider2{
+	background-image: url("https://orig00.deviantart.net/ac41/f/2017/234/0/e/synthwave_car_by_devitant-dbkxbly.gif");
 	background-size: cover;
+	background-attachment: fixed;	
+	min-height: 50vh;
 }
-.stream-content{
+.synth-slider{
+	min-height: 50vh;
+	color: white;
+	background-image: url("../images/darksynth.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: slide 25s infinite;
+}
+@keyframes slide{
+	25%{
+		background-image: url("https://vsetop.org/uploads/posts/2015-03/vsetop.com_1426069718_hotline_miami_2_wrong_number.jpg");
+
+	}
+	50%{
+		background-image: url("http://hotlinemiami.com/IMG/hotlinemiami_siteheader.gif");
+
+	}
+	75%{
+		background-image: url("https://i.redd.it/0sqww3t5hv601.jpg");
+	}
+	100%{
+		background-image: url("../images/darksynth.jpg");
+	}
+}
+.synth-music{
+	background-image: url("../images/car.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	text-align: center;
+	margin: 0 auto;
+}
+.synth-mus-cont{
+	min-height: 60vh;
 	background-color: rgba(0, 0, 0, 0.5);
-	border: solid black transparent;
+	border: solid transparent;
 	border-radius: 20px;
 	color: white;
-	max-height: 80vh;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
 }
-#chatroom{
-	min-height: 700px;
-}
-.music-second-sect{
-	min-height: 40vh;
-	background-color: rgba(63, 0, 255, 0.5);
+.synth-mus-card{
+	min-height: 280px;
+	min-width: 200px;
+	background-color: rgba(63, 0, 255, 0.3);
 	color: white;
+	border-style: solid transparent;
+	border-radius: 50px;
+	-webkit-animation-delay: 0.4s;
+ 	animation-delay: 0.4s;
 }
-.music-third-sect{
-	min-height: 40vh;
-	background-color: rgba(0, 0, 255, 0.5);
-	color: white;
+.synth-mus-card img{
+	border-style: solid transparent;
+	border-radius: 30px;
+	height: 280px;
+	min-width: 200px;
 }
+.btn-filter{
+	border: solid;
+	border-radius: 0;
+	border-width: 0;
+	width: 100%;
+}
+.page-num {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*End synth page*/
+
 .img-ls{
 	float: left;
 }
@@ -240,6 +363,7 @@ footer{
 	color: white;
 	background-color: rgba(0, 0, 0, 0.5);
 	min-height: 30vh;
+	z-index: -5;
 
 }
 footer ul{
@@ -283,133 +407,56 @@ footer .icons{
 	color: white;
 }
 .list-group-item{
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(0, 0, 0, 0.7);
 	color: white;
 	border-style: solid transparent;
 	border-radius: 10px;
 	margin-bottom: 10px;
-	z-index: -555;
 }
 .list-group-item:hover{
 	background-color: rgba(128, 0, 128, 0.5);
 	color: white;
 }
+.list-group .active{
+	background-color: rgba(128, 0, 128, 0.5);
+	color: white;
+	border: solid 1px black;
+}
 .gallery-items{
-	min-height: 220px;
 	min-width: 250px;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
-	border-style: solid transparent;
-	border-radius: 10px;
+	
 }
 .gallery-items img{
-	height: 300px;
+	height: 350px;
 	min-width: 250px;
 }
-#leftside{
+.ovl-merch{
+	opacity: 0;
+	transition: 0.5s;
+	color: white;
+	
+}
+.ovl-merch h3{
+	height: 350px;
+	line-height: 550px;
+	text-align: left;
+}
+.ovl-merch:hover{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#list-group{
 	width: 20%;
+	position: fixed;
+	z-index: 100;
 }
 .merch-items .col-md-9{
 	text-align: center;
 }
 
-
-
-/*NAV ANIMATION*/
-/*nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-	transition: all .5s;
-}
-nav ul li a:hover {
-	color: #555;
-}
-nav.stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 0%;
-	content: '.';
-	color: transparent;
-	background: #aaa;
-	height: 1px;
-}
-nav.stroke ul li a:hover:after {
-	width: 100%;
-}
-
-nav.fill ul li a {
-	transition: all 2s;
-}
-
-nav.fill ul li a:after {
-	text-align: left;
-	content: '.';
-	margin: 0;
-	opacity: 0;
-}
-nav.fill ul li a:hover {
-	color: #fff;
-	z-index: 1;
-}
-nav.fill ul li a:hover:after {
-	z-index: -10;
-	animation: fill 1s forwards;
-	-webkit-animation: fill 1s forwards;
-	-moz-animation: fill 1s forwards;
-	opacity: 1;
-}
-@-webkit-keyframes fill {
-	0% {
-	    width: 0%;
-	    height: 1px;
- 	 }
-  	50% {
-	    width: 100%;
-	    height: 1px;
-	  }
-	100% {
-	    width: 100%;
-	    height: 100%;
-	    background: #333;
-	}
-}*/
-
-/* Keyframes */
-/*@-webkit-keyframes circle {
-	0% {
-		width: 1px;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		margin: auto;
-		height: 1px;
-		z-index: -1;
-		background: #eee;
-		border-radius: 100%;
-	}
-	100% {
-		background: #aaa;
-		height: 5000%;
-		width: 5000%;
-		z-index: -1;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-		border-radius: 0;
-	}
-}*/
-/*NAV ANIMATION END*/
 html{
 	scroll-behavior: smooth;
 }
@@ -423,7 +470,7 @@ html{
 	}
 	/*Home*/
 	.first-section{
-		background-image: url("../images/car.gif");
+		background-image: url("../images/synth/1.gif");
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: 960px 1024px;
@@ -438,7 +485,12 @@ html{
 		margin: 0 auto;
 	}
 	.col-centered{
+		width: 100%;
 		margin: 0 auto;
+	}
+	.slideInUp{
+		animation-delay: 2s;
+		-webkit-animation-delay: 2s;
 	}
 
 	/*Merch Content*/
@@ -484,7 +536,7 @@ html{
 		margin-top: -25px;
 	}
 	.first-section{
-		background-image: url("../images/car.gif");
+		background-image: url("../images/synth/1.gif");
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: 400px 640px;
