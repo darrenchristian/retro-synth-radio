@@ -86,6 +86,10 @@ body{
 /*	color: white;
 */
 }
+#navbarmenu ul li .active{
+	border-bottom: solid #D5009C;
+	
+}
 .navbar-dark.scrolled{
   background-color: red;
 }

@@ -86,10 +86,11 @@ body{
 /*	color: white;
 */
 }
-.navbar-dark.scrolled{
-  background-color: red;
-}
 
+#navbarmenu ul li .active{
+	border-bottom: solid #D5009C;
+
+}
 /*.dropdown-menu{
 	margin-top: -70px;
 	background-color: rgba(63, 0, 255, 0.3);
@@ -132,7 +133,9 @@ body{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+.hvr-underline-from-center:hover:before, 
+.hvr-underline-from-center:focus:before, 
+.hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
@@ -336,7 +339,7 @@ hr{
 .synth-mus-card img{
 	border-style: solid transparent;
 	border-radius: 30px;
-	height: 280px;
+	height: 320px;
 	min-width: 200px;
 }
 .btn-filter{
@@ -521,7 +524,7 @@ footer .icons{
 	}
 	.description-text{
 		overflow:auto; 
-		width: 650px; 
+		width: 100%; 
 		height: 390px;
 		margin: 0 auto;
 	}
@@ -542,8 +545,17 @@ footer .icons{
 	.synth-slider{
 		min-height: 20vh;
 	}
-	/*movies*/
-	
+	.page-num nav ul li a{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+
+	}
+	/*movies & games*/
+	.synth-music{
+		background-attachment: fixed;
+	}
+	/*movies & games*/
 
 	/*Merch Content*/
 	.stream-section{
@@ -646,6 +658,9 @@ footer .icons{
 
 	.list-group{
 		visibility: hidden;
+	}
+	.synth-music{
+		background-attachment: fixed;
 	}
 
 }
