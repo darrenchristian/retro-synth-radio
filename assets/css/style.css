@@ -488,6 +488,21 @@ footer .icons{
 
 /*Tablet Rules*/
 @media only screen and (min-width: 401px) and (max-width: 960px){
+	/*landing*/
+	.jumbotron hr{
+		width: 80%;
+		margin: 0 auto;
+		text-shadow: 200px 200px blue;
+	}
+	.jumbotron a button{
+		width: 80%;
+		margin: 0 auto;
+		transition: 0.5s;
+	}
+	#jumbo-land{
+		padding-top: 40%;
+	}
+
 	.navbar ul img{
 		visibility: hidden;
 	}
@@ -549,6 +564,20 @@ footer .icons{
 }
 /*Mobile Phone*/
 @media only screen and (max-width: 400px){
+	/*landing*/
+	.jumbotron hr{
+		width: 100%;
+		margin: 0 auto;
+		text-shadow: 200px 200px blue;
+	}
+	.jumbotron a button{
+		width: 100%;
+		margin: 0 auto;
+		transition: 0.5s;
+	}
+	#jumbo-land{
+		padding-top: 40%;
+	}
 
 	.navbar ul img{
 		visibility: hidden
