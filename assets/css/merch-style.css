@@ -1,0 +1,624 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+
+}
+/*landing page*/
+.jumbotron hr{
+	background-color: #fff;
+}
+.jumbotron h1{
+	color: #f2f2f2;
+}
+.jumbotron p{
+	color: #f2f2f2;
+
+}
+.jumbotron hr{
+	width: 50%;
+	margin: 0 auto;
+	text-shadow: 200px 200px blue;
+}
+.jumbotron a button{
+	width: 30%;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+.jumbotron a:link{
+	text-decoration: none;
+}
+.jumbotron a button:hover{
+	background-color: purple;
+}
+
+#jumbo-land{
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+	padding-top: 15%;
+	border-radius: 0;
+}
+.landingpage{
+	background-image: url("https://orig00.deviantart.net/ac41/f/2017/234/0/e/synthwave_car_by_devitant-dbkxbly.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*end landing page*/
+
+/*fonts*/
+h1, h2, h3, h4, h5{
+	font-family: 'Yatra One', cursive;
+}
+
+/*Navigation Bar*/
+body{
+	background-color: black;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+#homeheader{
+	width: 100%;
+	height: 15vh;
+	background-image: url("../images/synthwave-header.jpg");
+	/*background-image: url("http://hotlinemiami.com/IMG/hotlinemiami_siteheader.gif");*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	scroll-behavior: smooth;
+}
+#mainNav{
+	background-color: rgb(0, 0, 0, 0.6);
+	color: white;
+	transition:500ms ease;
+}
+#navbarmenu ul li a{
+	padding-top: 30px;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Yatra One', cursive;
+
+/*	color: white;
+*/
+}
+.navbar-dark.scrolled{
+  background-color: red;
+}
+
+/*.dropdown-menu{
+	margin-top: -70px;
+	background-color: rgba(63, 0, 255, 0.3);
+	color: white;
+	margin-left: 20px;
+}
+.dropdown-item{
+	color: white;
+}
+.dropdown-item:hover{
+	background-color: rgba(255, 192, 203, 0.0);
+	color: pink;
+}
+.dropdown-item:active{
+	font-weight: bolder;
+	color: pink;
+}*/
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background-color: #D5009C;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*Nav Bar*/
+
+/*Home Page*/
+.stream-section{
+	background-image: url("../images/synth/1.gif");
+	/*background-image: url("../images/musicbg2.png");*/
+	/*background-attachment: fixed;*/
+	background-size: cover;
+}
+.stream-content{
+	background-color: rgba(0, 0, 0, 0.5);
+	border: solid black transparent;
+	border-radius: 20px;
+	color: white;
+}
+.stream-content{
+	font-family: 'Yatra One', cursive;
+}
+#chatroom{
+	min-height: 700px;
+}
+hr{
+	color: white;
+	border: solid 1px;
+}
+.carousel-item img{
+	height: 380px;
+}
+.carousel-caption a{
+	text-decoration: none;
+}
+.carousel-caption a:link{
+	color: white;
+}
+.description-text{
+	overflow:auto; 
+	width: 450px; 
+	height: 390px;
+}
+.description-text::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+.description-text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.description-text::-webkit-scrollbar-thumb {
+    background-color: rgba(24, 3, 105, 1);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.description-text::-webkit-scrollbar-thumb:hover {
+    background-image: url(http://www.textures4photoshop.com/tex/thumbs/seamless-plasma-electricity-texture-free-thumb40.jpg);
+}
+.second-section{
+	background-image: url("http://orig12.deviantart.net/3531/f/2015/322/1/0/the_grid___komodo_upload_02_by_winampers_pro-d9h4oaw.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	padding-top: 30px;
+}
+.sec-sect-info{
+	background-color: rgba(0, 0, 0, 0.4);
+	border: solid transparent;
+	border-radius: 20px;
+	color: white;
+}
+.sec-sect-info div[class*="col"]{
+	padding-top: 150px;
+}
+.sec-sect-info{
+	background-color: rgba(0, 0, 0, 0.4);
+	border: solid transparent;
+	border-radius: 20px;
+	color: white;
+}
+.sec-sect-info div[class*="col"]{
+	padding-top: 50px;
+}
+.third-sect-info{
+	background-color: rgba(0, 0, 0, 0.4);
+	border: solid transparent;
+	border-radius: 20px;
+	color: white;
+}
+.third-sect-info div[class*="col"]{
+	padding-top: 50px;
+}
+.latest-items{
+	min-height: 220px;
+	min-width: 250px;
+	background-color: rgba(63, 0, 255, 0.3);
+	color: white;
+	border-style: solid transparent;
+	border-radius: 50px;
+	-webkit-animation-delay: 0.7s;
+ 	animation-delay: 0.7s;
+}
+.latest-items img{
+	border-style: solid transparent;
+	border-radius: 30px;
+	height: 330px;
+	min-width: 250px;
+}
+.ovl{
+	opacity: 0;
+	transition: 1s;
+	color: white;
+	border-style: solid transparent;
+	border-radius: 30px;
+
+}
+.ovl-img{
+	opacity: 0;
+	transition: 1s;
+	padding: 0;
+	border-style: solid transparent;
+	border-radius: 30px;
+}
+.ovl:hover{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.ovl-img:hover{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*End Home Page*/
+
+
+/*Synth Page*/
+.synth-slider2{
+	background-image: url("https://orig00.deviantart.net/ac41/f/2017/234/0/e/synthwave_car_by_devitant-dbkxbly.gif");
+	background-size: cover;
+	background-attachment: fixed;	
+	min-height: 50vh;
+}
+.synth-slider{
+	min-height: 50vh;
+	color: white;
+	background-image: url("../images/darksynth.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: slide 25s infinite;
+}
+@keyframes slide{
+	25%{
+		background-image: url("https://vsetop.org/uploads/posts/2015-03/vsetop.com_1426069718_hotline_miami_2_wrong_number.jpg");
+
+	}
+	50%{
+		background-image: url("http://hotlinemiami.com/IMG/hotlinemiami_siteheader.gif");
+
+	}
+	75%{
+		background-image: url("https://i.redd.it/0sqww3t5hv601.jpg");
+	}
+	100%{
+		background-image: url("../images/darksynth.jpg");
+	}
+}
+.synth-music{
+	background-image: url("../images/car.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	text-align: center;
+	margin: 0 auto;
+}
+.synth-mus-cont{
+	min-height: 60vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: solid transparent;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.synth-mus-card{
+	min-height: 280px;
+	min-width: 200px;
+	background-color: rgba(63, 0, 255, 0.3);
+	color: white;
+	border-style: solid transparent;
+	border-radius: 50px;
+	-webkit-animation-delay: 0.4s;
+ 	animation-delay: 0.4s;
+}
+.synth-mus-card img{
+	border-style: solid transparent;
+	border-radius: 30px;
+	height: 280px;
+	min-width: 200px;
+}
+.btn-filter{
+	border: solid;
+	border-radius: 0;
+	border-width: 0;
+	width: 100%;
+}
+.page-num {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.page-item a{
+	background-color: rgba(63, 0, 255, 0.5);
+	border: solid 1px black;
+	color: white;
+}
+.page-item a:link{
+	color: white;
+}
+.page-item a:hover{
+	background-color: rgba(128, 0, 128, 0.7);
+	color: white;
+}
+.page-item a:active{
+	background-color: rgba(128, 0, 128);
+}
+.tab-sect{
+	background-color: rgba(128, 0, 128, 0.5);
+	color: white;
+	padding-left: 0;
+	padding-right: 0;
+}
+.tab-sect ul li .nav-link {
+	color: white;
+}
+
+/*End synth page*/
+
+.img-ls{
+	float: left;
+}
+.img-rs{
+	float: right;
+}
+
+footer{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 30vh;
+	z-index: -5;
+
+}
+footer ul{
+	list-style: none;
+}
+.footcontent{
+	background-color: rgba(255, 255, 255, 0.2);
+	line-height: 10vh;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+footer .icons{
+	margin-right: 20px;
+}
+.sources ul li a:link{
+	color: white;
+}
+
+
+
+/*Contact Us Page*/
+.contact-form{
+	padding-top: 50px;
+	background-color: rgba(255, 255, 255, 0.5);
+	min-height: 80vh;
+	color: black;
+	font-weight: bolder;
+}
+.btn-outline-primary{
+	border: solid;
+	border-color: rgba(63, 0, 255);
+}
+.btn-primary{
+	background-color: rgba(63, 0, 255, 0.5);
+}
+/*End Contact Us*/
+
+
+/*Merch Page*/
+.merch-items{
+	background-color: rgba(63, 0, 255, 0.7);
+	color: white;
+}
+.list-group-item{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	border-style: solid transparent;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.list-group-item:hover{
+	background-color: rgba(128, 0, 128, 0.5);
+	color: white;
+}
+.list-group .active{
+	background-color: rgba(128, 0, 128, 0.5);
+	color: white;
+	border: solid 1px black;
+}
+.gallery-items{
+	min-width: 250px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	
+}
+.gallery-items img{
+	height: 350px;
+	min-width: 250px;
+}
+.ovl-merch{
+	opacity: 0;
+	transition: 0.5s;
+	color: white;
+	
+}
+.ovl-merch h3{
+	height: 350px;
+	line-height: 550px;
+	text-align: left;
+}
+.ovl-merch:hover{
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#list-group{
+	width: 20%;
+	position: fixed;
+	z-index: 100;
+}
+.merch-items .col-md-9{
+	text-align: center;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+/*Tablet Rules*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	.navbar ul img{
+		visibility: hidden;
+	}
+	.navbar ul .half-nav{
+		margin-top: -125px;
+	}
+	/*Home*/
+	.first-section{
+		background-image: url("../images/synth/1.gif");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 960px 1024px;
+	}
+	.description{
+		text-align: center;
+	}
+	.description-text{
+		overflow:auto; 
+		width: 650px; 
+		height: 390px;
+		margin: 0 auto;
+	}
+	.col-centered{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.slideInUp{
+		animation-delay: 2s;
+		-webkit-animation-delay: 2s;
+	}
+	/*Music Content*/
+	.synth-mus-cont{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.synth-slider{
+		min-height: 20vh;
+	}
+	/*movies*/
+	
+
+	/*Merch Content*/
+	.stream-section{
+		padding: 0;
+
+	}
+	.stream-content{
+		padding-bottom: 50px;
+	}
+	.dropdown-menu{
+		margin-top: 10px;
+	}
+	.second-section{
+		width: 100%;
+		padding: 0;
+
+	}
+}
+/*Mobile Phone*/
+@media only screen and (max-width: 400px){
+
+	.navbar ul img{
+		visibility: hidden
+	}
+	.navbar ul .half-nav{
+		margin-top: -125px;
+	}
+	audio{
+		visibility: hidden;
+	}
+	
+	.carousel-item img{
+		height: 250px;
+	}
+	.dropdown-menu {
+		margin-top: 10px;
+	}
+
+	/*home*/
+	.description{
+		text-align: center;
+		margin-top: -25px;
+	}
+	.first-section{
+		background-image: url("../images/synth/1.gif");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 400px 640px;
+	}
+	.second-section{
+		width: 100%;
+		padding: 0;
+	}
+	.information > .row > .col-md-7{
+		padding-top: 50px;
+	}
+	.description-text{
+		overflow:auto; 
+		width: 300px; 
+		height: 390px;
+		
+		margin: 0 auto;
+	}
+	
+	/*music*/
+	#chatroom{
+		min-height: 300px;
+		margin-top: 20px;
+		padding: 0;
+	}
+	.stream-section{
+		padding: 0;
+	}
+	.stream-content{
+		min-height: 300px;
+		padding: 0;
+	}
+	.synth-slider{
+		min-height: 20vh;
+	}
+	.page-num{
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+
+	.list-group{
+		visibility: hidden;
+	}
+
+}

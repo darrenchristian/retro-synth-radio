@@ -316,7 +316,8 @@ hr{
 	min-height: 60vh;
 	background-color: rgba(0, 0, 0, 0.5);
 	border: solid transparent;
-	border-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 	color: white;
 	width: 100%;
 	text-align: center;
@@ -349,6 +350,30 @@ hr{
 	margin: 0 auto;
 	width: 100%;
 }
+.page-item a{
+	background-color: rgba(63, 0, 255, 0.5);
+	border: solid 1px black;
+	color: white;
+}
+.page-item a:link{
+	color: white;
+}
+.page-item a:hover{
+	background-color: rgba(128, 0, 128, 0.7);
+	color: white;
+}
+.page-item a:active{
+	background-color: rgba(128, 0, 128);
+}
+.tab-sect{
+	background-color: rgba(128, 0, 128, 0.5);
+	color: white;
+	padding-left: 0;
+	padding-right: 0;
+}
+.tab-sect ul li .nav-link {
+	color: white;
+}
 
 /*End synth page*/
 
@@ -379,6 +404,9 @@ footer ul{
 }
 footer .icons{
 	margin-right: 20px;
+}
+.sources ul li a:link{
+	color: white;
 }
 
 
@@ -457,9 +485,7 @@ footer .icons{
 	text-align: center;
 }
 
-html{
-	scroll-behavior: smooth;
-}
+
 /*Tablet Rules*/
 @media only screen and (min-width: 401px) and (max-width: 960px){
 	.navbar ul img{
@@ -492,6 +518,17 @@ html{
 		animation-delay: 2s;
 		-webkit-animation-delay: 2s;
 	}
+	/*Music Content*/
+	.synth-mus-cont{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.synth-slider{
+		min-height: 20vh;
+	}
+	/*movies*/
+	
 
 	/*Merch Content*/
 	.stream-section{
@@ -569,7 +606,17 @@ html{
 		min-height: 300px;
 		padding: 0;
 	}
+	.synth-slider{
+		min-height: 20vh;
+	}
+	.page-num{
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+
 	.list-group{
 		visibility: hidden;
 	}
+
 }
