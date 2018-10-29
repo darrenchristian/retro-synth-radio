@@ -222,7 +222,7 @@ hr{
 	color: white;
 }
 .sec-sect-info div[class*="col"]{
-	padding-top: 50px;
+	padding-top: 20px;
 }
 .third-sect-info{
 	background-color: rgba(0, 0, 0, 0.4);
@@ -374,11 +374,49 @@ hr{
 	padding-left: 0;
 	padding-right: 0;
 }
+.tab-sect ul li{
+	background-color: rgba(63, 0, 255, 0.5);
+
+}
+
 .tab-sect ul li .nav-link {
 	color: white;
 }
-
-
+.option-box select{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.option-box select:hover{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.option-box select:active{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.option-box select:focus{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.option-box input{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.option-box input:hover{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.option-box input:active{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
+.option-box input::placeholder{
+	color: white;
+}
+.option-box input:focus{
+	background-color: rgba(63, 0, 255, 0.5);
+	color: white;
+}
 /*End synth page*/
 
 .img-ls{
