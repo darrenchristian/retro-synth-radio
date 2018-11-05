@@ -309,9 +309,9 @@ hr{
 	}
 }
 .synth-music{
-	background-image: url("../images/car.gif");
+/**	background-image: url("../images/car.gif");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; **/
 	min-height: 100vh;
 	text-align: center;
 	margin: 0 auto;
